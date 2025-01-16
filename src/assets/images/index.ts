@@ -1,0 +1,10 @@
+export { default as slide1 } from "@/assets/images/slide1.jpg";
+export { default as slide2 } from "@/assets/images/slide2.jpg";
+export { default as slide3 } from "@/assets/images/slide3.jpg";
+export { default as logo1 } from "@/assets/images/logo1.png";
+export { default as logo2 } from "@/assets/images/logo2.png";
+export { default as logo3 } from "@/assets/images/logo3.png";
+export { default as logo4 } from "@/assets/images/logo4.png";
+export { default as logo5 } from "@/assets/images/logo5.png";
+export { default as logo6 } from "@/assets/images/logo6.png";
+export { default as avatar } from "@/assets/images/avatar.jpg";
