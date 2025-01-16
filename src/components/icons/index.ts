@@ -8,3 +8,4 @@ export { default as IconMaps } from "@/components/icons/IconMaps.vue";
 export { default as IconBed } from "@/components/icons/IconBed.vue";
 export { default as IconTub } from "@/components/icons/IconTub.vue";
 export { default as IconWide } from "@/components/icons/IconWide.vue";
+export { default as IconCheck } from "@/components/icons/IconCheck.vue";
