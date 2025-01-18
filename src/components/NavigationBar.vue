@@ -9,14 +9,22 @@
     </h1>
     <!-- Menu for larger screens -->
     <div class="hidden md:flex justify-between space-x-8 items-center">
-      <a class="text-sm md:text-lg font-bold font-sans" href="/">Home</a>
-      <a class="text-sm md:text-lg font-bold font-sans" href="/listing"
-        >Listing</a
+      <a class="text-sm md:text-base lg:text-lg font-bold font-sans" href="/"
+        >Home</a
       >
-      <a class="text-sm md:text-lg font-bold font-sans" href="/about"
+      <a
+        class="text-sm md:text-base lg:text-lg font-bold font-sans"
+        href="/list"
+        >Property List</a
+      >
+      <a
+        class="text-sm md:text-base lg:text-lg font-bold font-sans"
+        href="/about"
         >About Us</a
       >
-      <a class="text-sm md:text-lg font-bold font-sans" href="/contact"
+      <a
+        class="text-sm md:text-base lg:text-lg font-bold font-sans"
+        href="/contact"
         >Get In Touch</a
       >
     </div>
@@ -50,8 +58,8 @@
       >
       <a
         class="block py-2 px-4 text-sm font-bold font-sans border-b"
-        href="/listing"
-        >Listing</a
+        href="/list"
+        >Property List</a
       >
       <a
         class="block py-2 px-4 text-sm font-bold font-sans border-b"

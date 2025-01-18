@@ -9,3 +9,4 @@ export { default as IconBed } from "@/components/icons/IconBed.vue";
 export { default as IconTub } from "@/components/icons/IconTub.vue";
 export { default as IconWide } from "@/components/icons/IconWide.vue";
 export { default as IconCheck } from "@/components/icons/IconCheck.vue";
+export { default as IconSearch } from "@/components/icons/IconSearch.vue";
