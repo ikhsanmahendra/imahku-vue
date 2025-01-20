@@ -111,9 +111,9 @@
       </div>
 
       <TabProvider :tabs="['House', 'Condo', 'Villa']">
-        <TabPanel key="House"><HouseTab /></TabPanel>
-        <TabPanel key="Condo"><CondoTab /></TabPanel>
-        <TabPanel key="Villa"><VillaTab /></TabPanel>
+        <TabPanel key="House"><RecentHouseTab /></TabPanel>
+        <TabPanel key="Condo"><RecentCondoTab /></TabPanel>
+        <TabPanel key="Villa"><RecentVillaTab /></TabPanel>
       </TabProvider>
     </section>
 
@@ -130,7 +130,9 @@
           ImahKu will give you help hand with search for a new living
         </h2>
         <div class="flex justify-center items-center">
-          <ButtonComponent>Get a New Comfortable Home</ButtonComponent>
+          <RouterLink to="/list">
+            <ButtonComponent>Get a New Comfortable Home</ButtonComponent>
+          </RouterLink>
         </div>
       </div>
     </section>
@@ -273,18 +275,17 @@ import {
 } from "@/assets/images";
 import TabProvider from "@/components/TabProvider.vue";
 import { TabPanel } from "@headlessui/vue";
-import HouseTab from "./tabs/HouseTab.vue";
-import CondoTab from "./tabs/CondoTab.vue";
-import VillaTab from "./tabs/VillaTab.vue";
 import { ref } from "vue";
 import CustomerReviews from "@/components/CustomerReviews.vue";
+import RecentCondoTab from "./tabs/RecentCondoTab.vue";
+import RecentHouseTab from "./tabs/RecentHouseTab.vue";
+import RecentVillaTab from "./tabs/RecentVillaTab.vue";
 
 const images = [slide1, slide2, slide3, slide1, slide2, slide3];
 const logo = [logo1, logo2, logo3, logo4, logo5, logo6];
 
 const activeIndex = ref(0);
 
-// Check if the slide is active
 const isActive = (index: number) => {
   return index === activeIndex.value;
 };

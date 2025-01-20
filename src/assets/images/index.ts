@@ -17,3 +17,4 @@ export { default as avatar6 } from "@/assets/images/avatar6.jpg";
 export { default as avatar7 } from "@/assets/images/avatar7.jpg";
 export { default as avatar8 } from "@/assets/images/avatar8.jpg";
 export { default as about } from "@/assets/images/about.jpg";
+export { default as contact } from "@/assets/images/contact.jpg";

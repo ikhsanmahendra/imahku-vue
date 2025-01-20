@@ -176,7 +176,7 @@
         ImahKu will give you help hand with search for a new living
       </h2>
       <div class="flex justify-center items-center">
-        <RouterLink to="/">
+        <RouterLink to="/list">
           <ButtonComponent>Get a New Comfortable Home</ButtonComponent>
         </RouterLink>
       </div>

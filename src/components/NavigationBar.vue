@@ -5,29 +5,47 @@
     <h1
       class="text-xl md:text-2xl lg:text-3xl font-extrabold font-sans text-black"
     >
-      <a href="/"> Imahku </a>
+      <router-link to="/"> Imahku </router-link>
     </h1>
+
     <!-- Menu for larger screens -->
     <div class="hidden md:flex justify-between space-x-8 items-center">
-      <a class="text-sm md:text-base lg:text-lg font-bold font-sans" href="/"
-        >Home</a
-      >
-      <a
+      <router-link
+        to="/"
+        :class="{ 'underline underline-offset-4 text-black': isActive('/') }"
         class="text-sm md:text-base lg:text-lg font-bold font-sans"
-        href="/list"
-        >Property List</a
       >
-      <a
+        Home
+      </router-link>
+      <router-link
+        to="/list"
+        :class="{
+          'underline underline-offset-4 text-black': isActive('/list'),
+        }"
         class="text-sm md:text-base lg:text-lg font-bold font-sans"
-        href="/about"
-        >About Us</a
       >
-      <a
+        Property List
+      </router-link>
+      <router-link
+        to="/about"
+        :class="{
+          'underline underline-offset-4 text-black': isActive('/about'),
+        }"
         class="text-sm md:text-base lg:text-lg font-bold font-sans"
-        href="/contact"
-        >Get In Touch</a
       >
+        About Us
+      </router-link>
+      <router-link
+        to="/contact"
+        :class="{
+          'underline underline-offset-4 text-black': isActive('/contact'),
+        }"
+        class="text-sm md:text-base lg:text-lg font-bold font-sans"
+      >
+        Get In Touch
+      </router-link>
     </div>
+
     <!-- Mobile menu button -->
     <button
       @click="isMenuOpen = !isMenuOpen"
@@ -48,32 +66,56 @@
         />
       </svg>
     </button>
+
     <!-- Mobile menu -->
     <div
       v-if="isMenuOpen"
       class="absolute top-12 left-0 w-full bg-white shadow-md md:hidden"
     >
-      <a class="block py-2 px-4 text-sm font-bold font-sans border-b" href="/"
-        >Home</a
-      >
-      <a
+      <router-link
+        to="/"
+        :class="{ 'underline underline-offset-4 text-black': isActive('/') }"
         class="block py-2 px-4 text-sm font-bold font-sans border-b"
-        href="/list"
-        >Property List</a
       >
-      <a
+        Home
+      </router-link>
+      <router-link
+        to="/list"
+        :class="{
+          'underline underline-offset-4 text-black': isActive('/list'),
+        }"
         class="block py-2 px-4 text-sm font-bold font-sans border-b"
-        href="/about"
-        >About Us</a
       >
-      <a class="block py-2 px-4 text-sm font-bold font-sans" href="/contact"
-        >Get In Touch</a
+        Property List
+      </router-link>
+      <router-link
+        to="/about"
+        :class="{
+          'underline underline-offset-4 text-black': isActive('/about'),
+        }"
+        class="block py-2 px-4 text-sm font-bold font-sans border-b"
       >
+        About Us
+      </router-link>
+      <router-link
+        to="/contact"
+        :class="{
+          'underline underline-offset-4 text-black': isActive('/contact'),
+        }"
+        class="block py-2 px-4 text-sm font-bold font-sans"
+      >
+        Get In Touch
+      </router-link>
     </div>
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
+import { useRoute } from "vue-router";
+
 const isMenuOpen = ref(false);
+const route = useRoute();
+
+const isActive = (path) => route.path === path;
 </script>
