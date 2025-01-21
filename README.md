@@ -46,5 +46,5 @@ Axios: HTTP client for API integration.
 
 ```npm run dev```
 
-### 4. Open your browser and navigate to http://localhost:3000.
+### 4. Open your browser and navigate to http://localhost:5173 or port appear in your terminal .
 
