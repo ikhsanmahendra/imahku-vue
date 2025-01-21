@@ -1,21 +1,23 @@
 <template>
   <header>
     <div
-      class="flex-1 md:flex justify-between space-y-2 md:space-x-20 lg:space-x-40 py-4 bg-white px-4 md:px-20 lg:px-32"
+      class="flex-none w-full md:flex md:justify-between space-y-2 md:space-x-10 lg:space-x-20 py-4 bg-white px-4 md:px-20 lg:px-32"
     >
       <h1
-        class="text-5xl md:text-6xl lg:text-7xl font-extrabold font-sans text-black"
+        class="w-full text-5xl md:text-6xl lg:text-7xl font-extrabold font-sans text-black"
       >
         Find Your Dream House
       </h1>
-      <div class="space-y-5">
+      <div class="space-y-5 w-full">
         <h1 class="text-sm md:text-base lg:text-lg text-gray-500 font-sans">
           Discover the charm of an exclusive family home nestled in the serene
           hills of Sumedang, where the air is fresh, the atmosphere is tranquil,
           and the cool breeze invites relaxation.
         </h1>
         <div class="w-1/2">
-          <ButtonComponent>Discover More</ButtonComponent>
+          <RouterLink to="/list">
+            <ButtonComponent>Discover More</ButtonComponent>
+          </RouterLink>
         </div>
       </div>
     </div>
@@ -29,7 +31,7 @@
           :centered-slides="true"
           :slides-per-view="1.2"
           :loop="true"
-          :autoplay="{ delay: 3000, disableOnInteraction: false }"
+          :autoplay="{ delay: 2000, disableOnInteraction: false }"
           :pagination="{
             dynamicBullets: true,
             clickable: true,
@@ -111,9 +113,9 @@
       </div>
 
       <TabProvider :tabs="['House', 'Condo', 'Villa']">
-        <TabPanel key="House"><HouseTab /></TabPanel>
-        <TabPanel key="Condo"><CondoTab /></TabPanel>
-        <TabPanel key="Villa"><VillaTab /></TabPanel>
+        <TabPanel key="House"><RecentHouseTab /></TabPanel>
+        <TabPanel key="Condo"><RecentCondoTab /></TabPanel>
+        <TabPanel key="Villa"><RecentVillaTab /></TabPanel>
       </TabProvider>
     </section>
 
@@ -130,7 +132,9 @@
           ImahKu will give you help hand with search for a new living
         </h2>
         <div class="flex justify-center items-center">
-          <ButtonComponent>Get a New Comfortable Home</ButtonComponent>
+          <RouterLink to="/list">
+            <ButtonComponent>Get a New Comfortable Home</ButtonComponent>
+          </RouterLink>
         </div>
       </div>
     </section>
@@ -236,6 +240,7 @@
     </section>
 
     <section
+      id="reviews"
       class="py-16 md:py-20 lg:py-32 space-y-5 md:space-y-8 lg:space-y-10 bg-gray-50"
     >
       <div class="px-4 md:px-20 lg:px-32 space-y-4">
@@ -248,73 +253,7 @@
           Customer satisfaction is our priority.
         </h1>
       </div>
-
-      <Swiper
-        :modules="[Autoplay]"
-        :centered-slides="false"
-        :breakpoints="{
-          640: { slidesPerView: 1, spaceBetween: 10 },
-          768: { slidesPerView: 2, spaceBetween: 40 },
-          1024: { slidesPerView: 2.5, spaceBetween: 20 },
-        }"
-        :loop="true"
-        :autoplay="{ delay: 3000, disableOnInteraction: false }"
-        class="h-full"
-      >
-        <SwiperSlide v-for="(customer, index) in customers" :key="index">
-          <div id="main" class="p-8 bg-white rounded-lg space-y-6">
-            <div class="flex space-x-4">
-              <div class="size-10 md:size-12 lg:size-16">
-                <img
-                  :src="customer.avatar"
-                  alt="avatar customer"
-                  class="w-full h-full object-cover rounded-full"
-                />
-              </div>
-              <div>
-                <h1
-                  class="md:text-lg lg:text-xl text-black font-sans font-bold line-clamp-1"
-                >
-                  {{ customer.name }}
-                </h1>
-                <h2
-                  class="text-xs md:text-sm lg:text-base text-gray-500 font-sans"
-                >
-                  {{ customer.job }}
-                </h2>
-              </div>
-            </div>
-
-            <div>
-              <h1
-                class="text-xs md:text-sm lg:text-base font-sans dont-medium text-black line-clamp-3"
-              >
-                {{ customer.review }}
-              </h1>
-            </div>
-            <div class="flex justify-between">
-              <h1
-                class="text-gray-500 font-sans text-xs md:text-sm font-medium"
-              >
-                {{ customer.date }}
-              </h1>
-              <!-- Render bintang -->
-              <div class="flex space-x-1">
-                <span v-for="n in customer.star" :key="n" class="text-black"
-                  >★</span
-                >
-                <span
-                  v-for="n in 5 - customer.star"
-                  :key="'empty-' + n"
-                  class="text-gray-300"
-                >
-                  ★
-                </span>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+      <CustomerReviews />
     </section>
   </main>
 </template>
@@ -326,7 +265,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import {
-  avatar,
   logo1,
   logo2,
   logo3,
@@ -339,17 +277,17 @@ import {
 } from "@/assets/images";
 import TabProvider from "@/components/TabProvider.vue";
 import { TabPanel } from "@headlessui/vue";
-import HouseTab from "./tabs/HouseTab.vue";
-import CondoTab from "./tabs/CondoTab.vue";
-import VillaTab from "./tabs/VillaTab.vue";
 import { ref } from "vue";
+import CustomerReviews from "@/components/CustomerReviews.vue";
+import RecentCondoTab from "./tabs/RecentCondoTab.vue";
+import RecentHouseTab from "./tabs/RecentHouseTab.vue";
+import RecentVillaTab from "./tabs/RecentVillaTab.vue";
 
 const images = [slide1, slide2, slide3, slide1, slide2, slide3];
 const logo = [logo1, logo2, logo3, logo4, logo5, logo6];
 
 const activeIndex = ref(0);
 
-// Check if the slide is active
 const isActive = (index: number) => {
   return index === activeIndex.value;
 };
@@ -357,72 +295,6 @@ const isActive = (index: number) => {
 const onSwiperSlideChange = (swiper: any) => {
   activeIndex.value = swiper.realIndex;
 };
-
-const customers = [
-  {
-    avatar: avatar,
-    name: "Sophia Carter",
-    job: "Interior Designer",
-    review:
-      "“The house was beautifully designed and every detail was carefully thought out. I was impressed by the quality of the materials used and the functionality of the layout. Truly a dream home!”",
-    date: "Jan 10, 2024",
-    star: 5,
-  },
-  {
-    avatar: avatar,
-    name: "Michael Johnson",
-    job: "Architect",
-    review:
-      "“The property has potential but the layout could have been better. Some areas felt cramped, though the natural light in the living room was a highlight.”",
-    date: "Jan 12, 2024",
-    star: 3,
-  },
-  {
-    avatar: avatar,
-    name: "Emma Wilson",
-    job: "Real Estate Agent",
-    review:
-      "“As someone in the real estate business, I found this property to be a gem. The neighborhood is peaceful, and the house itself is very well-maintained. Perfect for families!”",
-    date: "Jan 15, 2024",
-    star: 4,
-  },
-  {
-    avatar: avatar,
-    name: "Daniel Roberts",
-    job: "Software Engineer",
-    review:
-      "“I loved the tech-friendly setup of the house, especially the smart home integration. It made living here so convenient. Highly recommend!”",
-    date: "Jan 18, 2024",
-    star: 5,
-  },
-  {
-    avatar: avatar,
-    name: "Ava Brown",
-    job: "Photographer",
-    review:
-      "“The property had stunning views and the garden was absolutely breathtaking. However, the indoor space felt slightly outdated and could use a modern touch.”",
-    date: "Jan 20, 2024",
-    star: 4,
-  },
-  {
-    avatar: avatar,
-    name: "Lucas Miller",
-    job: "Teacher",
-    review:
-      "“The house was nice overall, but the lack of storage space was a downside. It’s great for a small family but may not be ideal for larger ones.”",
-    date: "Jan 22, 2024",
-    star: 3,
-  },
-  {
-    avatar: avatar,
-    name: "Olivia Davis",
-    job: "Marketing Specialist",
-    review:
-      "“A perfect combination of comfort and style. The living room design is cozy and inviting, while the kitchen is well-equipped for hosting guests.”",
-    date: "Jan 25, 2024",
-    star: 5,
-  },
-];
 </script>
 
 <style scoped>
@@ -434,7 +306,6 @@ const customers = [
 ::v-deep(.swiper-pagination-bullet-active) {
   background: rgb(0, 0, 0) !important;
   opacity: 1;
-  width: 30%;
   border-radius: 20px;
 }
 </style>

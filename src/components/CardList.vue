@@ -1,6 +1,6 @@
 <template>
-  <button @click="onClick" type="button" class="my-2 w-96">
-    <div class="relative w-full md:w-48 lg:w-60">
+  <button @click="onClick" type="button" class="my-2 w-full">
+    <div class="relative w-full">
       <h1
         class="px-2 py-1 bg-blue-50 text-sm md:text-xs lg:text-sm font-sans font-bold rounded-md absolute z-20 right-4 mt-4"
       >
