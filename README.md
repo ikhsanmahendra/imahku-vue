@@ -4,7 +4,7 @@
 
 This project is a Vue.js and TypeScript-based template for a property listing website. It provides a customizable interface to showcase properties such as houses, condos, and villas. The template is designed to be responsive, user-friendly, and easily extendable.
 
-##Features
+## Features
 
 **Property Categories**: Separate pages for Houses, Condos, and Villas.
 
@@ -20,7 +20,7 @@ This project is a Vue.js and TypeScript-based template for a property listing we
 
 **API Integration**: Fetch property data from a backend API.
 
-##Technologies Used
+## Technologies Used
 
 Vue.js 3: Frontend framework.
 
@@ -34,17 +34,17 @@ Axios: HTTP client for API integration.
 
 #Installation
 
-###1. Clone the repository:
+### 1. Clone the repository:
 
 ```git clone https://github.com/ikhsanmahendra/imahku-vue.git```
 
-###2. Install dependencies:
+### 2. Install dependencies:
 
 ```npm install```
 
-###3. Run the development server:
+### 3. Run the development server:
 
 ```npm run dev```
 
-###4. Open your browser and navigate to http://localhost:3000.
+### 4. Open your browser and navigate to http://localhost:3000.
 >>>>>>> 422f22c (feat: project init)
