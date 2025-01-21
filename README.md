@@ -4,6 +4,8 @@
 
 This project is a Vue.js and TypeScript-based template for a property listing website. It provides a customizable interface to showcase properties such as houses, condos, and villas. The template is designed to be responsive, user-friendly, and easily extendable.
 
+## Preview Website in Vercel : https://imahku-vue.vercel.app/
+
 ## Features
 
 **Property Categories**: Separate pages for Houses, Condos, and Villas.
