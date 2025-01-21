@@ -1,21 +1,23 @@
 <template>
   <header>
     <div
-      class="flex-none md:flex justify-between space-y-2 md:space-x-20 lg:space-x-40 py-4 bg-white px-4 md:px-20 lg:px-32"
+      class="flex-none w-full md:flex md:justify-between space-y-2 md:space-x-10 lg:space-x-20 py-4 bg-white px-4 md:px-20 lg:px-32"
     >
       <h1
-        class="text-5xl md:text-6xl lg:text-7xl font-extrabold font-sans text-black"
+        class="w-full text-5xl md:text-6xl lg:text-7xl font-extrabold font-sans text-black"
       >
         Find Your Dream House
       </h1>
-      <div class="space-y-5">
+      <div class="space-y-5 w-full">
         <h1 class="text-sm md:text-base lg:text-lg text-gray-500 font-sans">
           Discover the charm of an exclusive family home nestled in the serene
           hills of Sumedang, where the air is fresh, the atmosphere is tranquil,
           and the cool breeze invites relaxation.
         </h1>
         <div class="w-1/2">
-          <ButtonComponent>Discover More</ButtonComponent>
+          <RouterLink to="/list">
+            <ButtonComponent>Discover More</ButtonComponent>
+          </RouterLink>
         </div>
       </div>
     </div>
@@ -29,7 +31,7 @@
           :centered-slides="true"
           :slides-per-view="1.2"
           :loop="true"
-          :autoplay="{ delay: 3000, disableOnInteraction: false }"
+          :autoplay="{ delay: 2000, disableOnInteraction: false }"
           :pagination="{
             dynamicBullets: true,
             clickable: true,
@@ -304,7 +306,6 @@ const onSwiperSlideChange = (swiper: any) => {
 ::v-deep(.swiper-pagination-bullet-active) {
   background: rgb(0, 0, 0) !important;
   opacity: 1;
-  width: 30%;
   border-radius: 20px;
 }
 </style>

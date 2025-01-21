@@ -32,7 +32,7 @@ const router = createRouter({
           component: ListView,
         },
         {
-          path: ":id",
+          path: ":type/:id",
           name: "Detail Property",
           component: DetailPropertyView,
         },

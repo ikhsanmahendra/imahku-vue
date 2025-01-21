@@ -21,7 +21,7 @@ import { IconRedirect } from "@/components/icons";
   </div>
 
   <section
-    class="flex-none md:flex space-x-4 space-y-4 pt-16 px-4 md:px-20 lg:px-32"
+    class="flex-none md:flex space-x-4 space-y-4 pt-16 px-4 md:px-20 lg:px-32 mb-20"
   >
     <div
       class="bg-gray-50 w-full rounded-2xl px-3 md:px-4 lg:px-6 py-6 md:py-8 lg:py-12 flex-none md:flex md:space-x-4"
@@ -103,7 +103,7 @@ import { IconRedirect } from "@/components/icons";
   <section
     class="flex-none md:flex space-x-4 space-y-4 bg-gray-50 pt-16 px-4 md:px-20 lg:px-32"
   >
-    <div class="md:grid md: grid-cols-3 gap-10">
+    <div class="md:grid md: grid-cols-3 gap-10 space-y-8 md:space-y-0">
       <div class="space-y-8">
         <div class="space-y-4">
           <h1
