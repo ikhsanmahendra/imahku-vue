@@ -110,12 +110,12 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 import { useRoute } from "vue-router";
 
 const isMenuOpen = ref(false);
 const route = useRoute();
 
-const isActive = (path) => route.path === path;
+const isActive = (path: string) => route.path === path;
 </script>
