@@ -1,37 +1,50 @@
 <<<<<<< HEAD
-# imahku-vue
-=======
+
 # imahku
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is a Vue.js and TypeScript-based template for a property listing website. It provides a customizable interface to showcase properties such as houses, condos, and villas. The template is designed to be responsive, user-friendly, and easily extendable.
 
-## Recommended IDE Setup
+##Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+**Property Categories**: Separate pages for Houses, Condos, and Villas.
 
-## Type Support for `.vue` Imports in TS
+**Dynamic Filtering**: Filter properties by price, location, and features.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+**Interactive UI**: Smooth navigation with a modern design.
 
-## Customize configuration
+**Responsive Design**: Optimized for desktop and mobile users.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+**TypeScript Support**: Strong typing and enhanced development experience.
 
-## Project Setup
+**Reusable Components**: Modular design for easy customization.
 
-```sh
-npm install
-```
+**API Integration**: Fetch property data from a backend API.
 
-### Compile and Hot-Reload for Development
+##Technologies Used
 
-```sh
-npm run dev
-```
+Vue.js 3: Frontend framework.
 
-### Type-Check, Compile and Minify for Production
+TypeScript: Type-safe programming.
 
-```sh
-npm run build
-```
+Pinia: State management.
+
+Tailwind CSS: Utility-first CSS framework.
+
+Axios: HTTP client for API integration.
+
+#Installation
+
+###1. Clone the repository:
+
+```git clone https://github.com/ikhsanmahendra/imahku-vue.git```
+
+###2. Install dependencies:
+
+```npm install```
+
+###3. Run the development server:
+
+```npm run dev```
+
+###4. Open your browser and navigate to http://localhost:3000.
 >>>>>>> 422f22c (feat: project init)
