@@ -1,16 +1,18 @@
 <template>
   <button @click="onClick" type="button" class="my-2 w-full">
-    <div class="relative w-full">
+    <div class="relative">
       <h1
         class="px-2 py-1 bg-blue-50 text-sm md:text-xs lg:text-sm font-sans font-bold rounded-md absolute z-20 right-4 mt-4"
       >
         {{ props.price }}
       </h1>
-      <img
-        :src="props.image"
-        alt=""
-        class="mb-5 w-full h-full md:h-40 lg:h-48 object-cover rounded-xl py-2"
-      />
+      <div class="rounded-xl overflow-hidden">
+        <img
+          :src="props.image"
+          alt=""
+          class="mb-5 w-full h-full md:h-40 md:w-full lg:h-52 xl:h-60 lg:w-[600px] object-cover rounded-xl py-2 duration-150 transition hover:scale-110"
+        />
+      </div>
     </div>
     <div class="space-y-2">
       <h1

@@ -30,11 +30,7 @@
   </div>
 
   <div class="md:grid md:grid-cols-3 gap-5 px-4 md:px-20 lg:px-32">
-    <div
-      class="w-full flex"
-      v-for="(card, index) in paginatedCards"
-      :key="index"
-    >
+    <div class="flex" v-for="(card, index) in paginatedCards" :key="index">
       <RouterLink :to="`/list/${card.type}/${card.id}`">
         <CardList
           :image="card.thumbnail"

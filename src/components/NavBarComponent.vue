@@ -5,14 +5,17 @@
     <h1
       class="text-xl md:text-2xl lg:text-3xl font-extrabold font-sans text-black"
     >
-      <router-link to="/"> Imahku </router-link>
+      <router-link to="/"> ImahKu </router-link>
     </h1>
 
     <!-- Menu for larger screens -->
     <div class="hidden md:flex justify-between space-x-8 items-center">
       <router-link
         to="/"
-        :class="{ 'underline underline-offset-4 text-black': isActive('/') }"
+        :class="{
+          'underline underline-offset-8 decoration-2  text-black':
+            isActive('/'),
+        }"
         class="text-sm md:text-base lg:text-lg font-bold font-sans"
       >
         Home
@@ -20,7 +23,8 @@
       <router-link
         to="/list"
         :class="{
-          'underline underline-offset-4 text-black': isActive('/list'),
+          'underline underline-offset-8 decoration-2 text-black':
+            isActive('/list'),
         }"
         class="text-sm md:text-base lg:text-lg font-bold font-sans"
       >
@@ -29,7 +33,8 @@
       <router-link
         to="/about"
         :class="{
-          'underline underline-offset-4 text-black': isActive('/about'),
+          'underline underline-offset-8 decoration-2 text-black':
+            isActive('/about'),
         }"
         class="text-sm md:text-base lg:text-lg font-bold font-sans"
       >
@@ -38,7 +43,8 @@
       <router-link
         to="/contact"
         :class="{
-          'underline underline-offset-4 text-black': isActive('/contact'),
+          'underline underline-offset-8 decoration-2 text-black':
+            isActive('/contact'),
         }"
         class="text-sm md:text-base lg:text-lg font-bold font-sans"
       >
@@ -74,7 +80,9 @@
     >
       <router-link
         to="/"
-        :class="{ 'underline underline-offset-4 text-black': isActive('/') }"
+        :class="{
+          'underline underline-offset-8 decoration-2 text-black': isActive('/'),
+        }"
         class="block py-2 px-4 text-sm font-bold font-sans border-b"
       >
         Home
@@ -82,7 +90,8 @@
       <router-link
         to="/list"
         :class="{
-          'underline underline-offset-4 text-black': isActive('/list'),
+          'underline underline-offset-8 decoration-2 text-black':
+            isActive('/list'),
         }"
         class="block py-2 px-4 text-sm font-bold font-sans border-b"
       >
@@ -91,7 +100,8 @@
       <router-link
         to="/about"
         :class="{
-          'underline underline-offset-4 text-black': isActive('/about'),
+          'underline underline-offset-8 decoration-2 text-black':
+            isActive('/about'),
         }"
         class="block py-2 px-4 text-sm font-bold font-sans border-b"
       >
@@ -100,7 +110,8 @@
       <router-link
         to="/contact"
         :class="{
-          'underline underline-offset-4 text-black': isActive('/contact'),
+          'underline underline-offset-8 decoration-2 text-black':
+            isActive('/contact'),
         }"
         class="block py-2 px-4 text-sm font-bold font-sans"
       >

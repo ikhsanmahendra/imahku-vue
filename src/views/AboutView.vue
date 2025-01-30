@@ -30,7 +30,7 @@
       <h1
         class="text-black text-2xl md:text-3xl lg:text-4xl text-start font-sans font-bold"
       >
-        Imahku
+        ImahKu
       </h1>
       <h1 class="text-gray-600 font-sans text-sm md:text-base lg:text-lg">
         We are passionate about helping our clients achieve their real estate

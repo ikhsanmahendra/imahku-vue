@@ -18,7 +18,7 @@ import {
       <h1
         class="text-xl md:text-2xl lg:text-3xl font-extrabold font-sans text-black"
       >
-        Imahku
+        ImahKu
       </h1>
       <p class="text-gray-600 font-sans">
         We are passionate about helping our clients achieve their real estate

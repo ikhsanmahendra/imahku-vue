@@ -26,7 +26,7 @@
   <section v-if="detail">
     <div
       id="image_detail"
-      class="flex-none w-full md:flex md:justify-between space-y-6 md:space-y-0 md:gap-6 py-4 px-4 md:px-20 lg:px-32"
+      class="flex-none w-full md:flex md:justify-between space-y-6 md:space-y-0 md:gap-4 lg:gap-6 py-4 px-4 md:px-20 lg:px-32"
     >
       <div class="flex-none md:flex md:justify-center md:gap-6 w-full md:w-2/5">
         <img
@@ -36,24 +36,30 @@
         />
       </div>
 
-      <div class="flex-none md:gap-6 w-full md:w-3/5 space-y-6">
-        <div class="flex-none w-full md:flex gap-6 space-y-6 md:space-y-0">
-          <img
-            :src="detail.image1"
-            alt=""
-            class="object-cover rounded-xl w-full h-48 md:size-44 lg:w-full"
-          />
-          <img
-            :src="detail.image2"
-            alt=""
-            class="object-cover rounded-xl w-full h-48 md:size-44 lg:w-full"
-          />
+      <div class="md:gap-4 lg:gap-6 w-full md:w-3/5 space-y-6">
+        <div
+          class="flex flex-col w-full md:flex md:flex-row gap-6 space-y-6 md:space-y-0"
+        >
+          <div class="w-full">
+            <img
+              :src="detail.image1"
+              alt=""
+              class="rounded-xl w-full h-48 md:w-40 md:h-40 lg:w-full lg:h-52 object-cover"
+            />
+          </div>
+          <div class="w-full">
+            <img
+              :src="detail.image2"
+              alt=""
+              class="rounded-xl w-full h-48 md:w-40 md:h-40 lg:w-full lg:h-52 object-cover"
+            />
+          </div>
         </div>
         <div class="w-full h-full">
           <img
             :src="detail.image2"
             alt=""
-            class="object-cover rounded-xl w-full h-48 md:full md:h-48 lg:w-full lg:h-60"
+            class="object-cover rounded-xl w-full h-48 md:w-full md:h-48 lg:w-full lg:h-72"
           />
         </div>
       </div>
