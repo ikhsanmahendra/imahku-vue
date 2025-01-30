@@ -24,9 +24,16 @@ import { IconRedirect } from "@/components/icons";
     class="flex-none md:flex space-x-4 space-y-4 pt-16 px-4 md:px-20 lg:px-32 mb-20"
   >
     <div
-      class="bg-gray-50 w-full rounded-2xl px-3 md:px-4 lg:px-6 py-6 md:py-8 lg:py-12 flex-none md:flex md:space-x-4"
+      class="bg-gray-50 w-full rounded-2xl px-3 md:px-4 lg:px-6 py-6 md:py-8 lg:py-12 flex-none md:flex md:space-x-4 flex-col lg:flex-row-reverse gap-4"
     >
-      <div class="space-y-2 w-full md:w-1/2">
+      <div class="flex justify-center items-center w-full lg:w-1/2">
+        <img
+          :src="contact"
+          alt=""
+          class="w-72 md:w-full lg:w-[400px] xl:w-[800px] h-52 md:h-full lg:h-[600px] xl:h-[600px] object-cover rounded-xl"
+        />
+      </div>
+      <div class="space-y-2 w-full lg:w-1/2">
         <h1
           class="text-black font-sans font-bold text-3xl md:text-4xl lg:text-5xl"
         >
@@ -89,14 +96,6 @@ import { IconRedirect } from "@/components/icons";
           </h2>
         </div>
         <ButtonComponent class="w-full mt-10">Send Message</ButtonComponent>
-      </div>
-
-      <div class="flex justify-center items-center w-0 md:w-1/2">
-        <img
-          :src="contact"
-          alt=""
-          class="w-72 md:w-80 lg:w-96 h-52 md:h-80 lg:h-96 object-cover rounded-xl"
-        />
       </div>
     </div>
   </section>
