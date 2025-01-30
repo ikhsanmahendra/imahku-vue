@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full px-4 md:px-20 lg:px-32 py-4 flex justify-between items-center"
+    class="w-full px-4 md:px-20 lg:px-32 py-4 flex justify-between items-center border border-gray-100"
   >
     <h1
       class="text-xl md:text-2xl lg:text-3xl font-extrabold font-sans text-black"

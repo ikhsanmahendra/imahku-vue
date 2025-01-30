@@ -6,7 +6,7 @@ import { IconRedirect } from "@/components/icons";
 
 <template>
   <div
-    class="flex-none md:flex md:justify-between gap-5 bg-white px-4 md:px-20 lg:px-32"
+    class="flex-none md:flex md:justify-between gap-5 mt-4 bg-white px-4 md:px-20 lg:px-32"
   >
     <h1
       class="text-5xl md:text-6xl lg:text-7xl text-black font-extrabold font-sans w-full"
