@@ -44,14 +44,14 @@
             <img
               :src="detail.image1"
               alt=""
-              class="rounded-xl w-full h-48 md:w-40 md:h-40 lg:w-full lg:h-52 object-cover"
+              class="rounded-xl w-full h-48 md:w-40 md:h-40 lg:w-full lg:h-52 xl:h-64 object-cover"
             />
           </div>
           <div class="w-full">
             <img
               :src="detail.image2"
               alt=""
-              class="rounded-xl w-full h-48 md:w-40 md:h-40 lg:w-full lg:h-52 object-cover"
+              class="rounded-xl w-full h-48 md:w-40 md:h-40 lg:w-full lg:h-52 xl:h-64 object-cover"
             />
           </div>
         </div>
@@ -59,7 +59,7 @@
           <img
             :src="detail.image2"
             alt=""
-            class="object-cover rounded-xl w-full h-48 md:w-full md:h-48 lg:w-full lg:h-72"
+            class="object-cover rounded-xl w-full h-48 md:w-full md:h-48 lg:w-full lg:h-72 xl:h-96"
           />
         </div>
       </div>
