@@ -6,7 +6,7 @@ import { IconRedirect } from "@/components/icons";
 
 <template>
   <div
-    class="flex-none md:flex md:justify-between gap-5 mt-4 bg-white px-4 md:px-20 lg:px-32"
+    class="flex-none md:flex md:justify-between gap-5 mt-4 bg-white px-4 py-10 md:px-20 lg:px-32"
   >
     <h1
       class="text-5xl md:text-6xl lg:text-7xl text-black font-extrabold font-sans w-full"
@@ -100,7 +100,7 @@ import { IconRedirect } from "@/components/icons";
     </div>
   </section>
   <section
-    class="flex-none md:flex space-x-4 space-y-4 bg-gray-50 pt-16 px-4 md:px-20 lg:px-32"
+    class="flex-none md:flex space-x-4 space-y-4 bg-gray-50 py-16 px-4 md:px-20 lg:px-32"
   >
     <div class="md:grid md: grid-cols-3 gap-10 space-y-8 md:space-y-0">
       <div class="space-y-8">

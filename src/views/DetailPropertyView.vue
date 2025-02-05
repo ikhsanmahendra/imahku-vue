@@ -1,7 +1,7 @@
 <template>
   <section v-if="detail">
     <div
-      class="w-full space-y-4 md:space-y-8 lg:space-y-10 py-4 px-4 md:px-20 lg:px-32"
+      class="w-full space-y-4 md:space-y-8 lg:space-y-10 py-10 px-4 md:px-20 lg:px-32"
     >
       <div class="w-full flex-none md:flex md:justify-between space-y-2">
         <div class="w-full space-y-4">

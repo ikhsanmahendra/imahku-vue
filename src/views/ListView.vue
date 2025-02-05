@@ -1,5 +1,5 @@
 <template>
-  <section class="flex-none space-y-4 pt-16 bg-white px-4 md:px-20 lg:px-32">
+  <section class="flex-none space-y-4 pt-10 bg-white px-4 md:px-20 lg:px-32">
     <h1
       class="text-black font-sans font-extrabold text-4xl md:text-5xl lg:text-6xl"
     >

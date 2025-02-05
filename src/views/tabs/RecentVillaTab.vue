@@ -5,7 +5,7 @@
       v-for="(card, index) in displayedCards"
       :key="index"
     >
-      <RouterLink :to="`/list/${card.type}/${card.id}`">
+      <RouterLink :to="`/property-list/${card.type}/${card.id}`">
         <CardList
           :image="card.thumbnail"
           :title="card.title"

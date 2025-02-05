@@ -1,7 +1,7 @@
 <template>
   <header>
     <div
-      class="flex-none w-full md:flex md:justify-between space-y-2 md:space-x-10 lg:space-x-20 py-4 bg-white px-4 md:px-20 lg:px-32"
+      class="flex-none w-full md:flex md:justify-between space-y-2 md:space-x-10 lg:space-x-20 py-10 bg-white px-4 md:px-20 lg:px-32"
     >
       <h1
         class="w-full text-5xl md:text-6xl lg:text-7xl font-extrabold font-sans text-black"
@@ -15,7 +15,7 @@
           and the cool breeze invites relaxation.
         </h1>
         <div class="w-1/2">
-          <RouterLink to="/list">
+          <RouterLink to="/property-list">
             <ButtonComponent>Discover More</ButtonComponent>
           </RouterLink>
         </div>
@@ -90,8 +90,10 @@
   </header>
 
   <main>
-    <section class="pb-6 md:pb-8 lg:pb-10">
+    <section data-aos="fade-up" class="pb-6 md:pb-8 lg:pb-10">
       <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
         class="pt-10 md:pt-16 lg:pt-20 flex-1 md:flex md:justify-between space-x-0 md:space-x-4 px-4 md:px-20 lg:px-32"
       >
         <div class="space-y-4">
@@ -120,8 +122,10 @@
     </section>
 
     <section class="bg-gray-50 py-10 md:py-16 lg:py-20 px-4 md:px-20 lg:px-32">
-      <div class="px-10 md:px-16 lg:px-20">
+      <div data-aos="zoom-in" class="px-10 md:px-16 lg:px-20">
         <h1
+          data-aos="zoom-in"
+          data-aos-duration="1500"
           class="text-2xl md:text-3xl lg:text-4xl font-sans font-extrabold text-black text-center mb-3"
         >
           Find your new living
@@ -132,7 +136,7 @@
           ImahKu will give you help hand with search for a new living
         </h2>
         <div class="flex justify-center items-center">
-          <RouterLink to="/list">
+          <RouterLink to="/property-list">
             <ButtonComponent>Get a New Comfortable Home</ButtonComponent>
           </RouterLink>
         </div>
@@ -140,14 +144,17 @@
     </section>
 
     <section class="py-16 md:py-20 lg:py-36 px-4 md:px-20 lg:px-32">
-      <div class="space-y-6 md:space-y-8 lg:space-y-10">
+      <div data-aos="fade-up" class="space-y-6 md:space-y-8 lg:space-y-10">
         <div class="space-y-4">
           <h1
+            data-aos="fade-right"
             class="text-4xl md:text-5xl lg:text-6xl font-sans font-extrabold text-black text-start"
           >
             Why Chose Us?
           </h1>
           <h2
+            data-aos="fade-right"
+            data-aos-duration="1500"
             class="text-gray-500 text-sm md:text-base lg:text-lg font-sans w-3/4"
           >
             We are committed to providing exceptional service and unparalleled
@@ -162,9 +169,10 @@
           />
         </div>
         <div
+          data-aos="fade-up"
           class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-x-0 md:gap-x-12 space-y-8 md:space-y-0 md:gap-y-10 lg:gap-y-20"
         >
-          <div class="space-y-4">
+          <div data-aos="zoom-in" data-aos-duration="1000" class="space-y-4">
             <h1
               class="text-black font-bold font-sans text-lg md:text-xl lg:text-2xl"
             >
@@ -176,7 +184,7 @@
             </h2>
           </div>
 
-          <div class="space-y-4">
+          <div data-aos="zoom-in" data-aos-duration="2000" class="space-y-4">
             <h1
               class="text-black font-bold font-sans text-lg md:text-xl lg:text-2xl"
             >
@@ -188,7 +196,7 @@
             </h2>
           </div>
 
-          <div class="space-y-4">
+          <div data-aos="zoom-in" data-aos-duration="3000" class="space-y-4">
             <h1
               class="text-black font-bold font-sans text-lg md:text-xl lg:text-2xl"
             >
@@ -200,7 +208,7 @@
             </h2>
           </div>
 
-          <div class="space-y-4">
+          <div data-aos="zoom-in" data-aos-duration="1000" class="space-y-4">
             <h1
               class="text-black font-bold font-sans text-lg md:text-xl lg:text-2xl"
             >
@@ -212,7 +220,7 @@
             </h2>
           </div>
 
-          <div class="space-y-4">
+          <div data-aos="zoom-in" data-aos-duration="2000" class="space-y-4">
             <h1
               class="text-black font-bold font-sans text-lg md:text-xl lg:text-2xl"
             >
@@ -224,7 +232,7 @@
             </h2>
           </div>
 
-          <div class="space-y-4">
+          <div data-aos="zoom-in" data-aos-duration="3000" class="space-y-4">
             <h1
               class="text-black font-bold font-sans text-lg md:text-xl lg:text-2xl"
             >
@@ -245,15 +253,21 @@
     >
       <div class="px-4 md:px-20 lg:px-32 space-y-4">
         <h1
+          data-aos="fade-right"
+          data-aos-duration="1500"
           class="text-black font-sans font-extrabold text-4xl md:text-5xl lg:text-6xl"
         >
           Customer Reviews
         </h1>
-        <h1 class="text-black font-sans text-sm md:text-base lg:text-lg">
+        <h1
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          class="text-black font-sans text-sm md:text-base lg:text-lg"
+        >
           Customer satisfaction is our priority.
         </h1>
       </div>
-      <CustomerReviews />
+      <CustomerReviews data-aos="fade-up" />
     </section>
   </main>
 </template>

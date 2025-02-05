@@ -21,10 +21,10 @@
         Home
       </router-link>
       <router-link
-        to="/list"
+        to="/property-list"
         :class="{
           'underline underline-offset-8 decoration-2 text-black':
-            isActive('/list'),
+            isActive('/property-list'),
         }"
         class="text-sm md:text-base lg:text-lg font-bold font-sans"
       >
@@ -41,10 +41,10 @@
         About Us
       </router-link>
       <router-link
-        to="/contact"
+        to="/get-in-touch"
         :class="{
           'underline underline-offset-8 decoration-2 text-black':
-            isActive('/contact'),
+            isActive('/get-in-touch'),
         }"
         class="text-sm md:text-base lg:text-lg font-bold font-sans"
       >
@@ -88,10 +88,10 @@
         Home
       </router-link>
       <router-link
-        to="/list"
+        to="/property-list"
         :class="{
           'underline underline-offset-8 decoration-2 text-black':
-            isActive('/list'),
+            isActive('/property-list'),
         }"
         class="block py-2 px-4 text-sm font-bold font-sans border-b"
       >
@@ -108,10 +108,10 @@
         About Us
       </router-link>
       <router-link
-        to="/contact"
+        to="/get-in-touch"
         :class="{
           'underline underline-offset-8 decoration-2 text-black':
-            isActive('/contact'),
+            isActive('/get-in-touch'),
         }"
         class="block py-2 px-4 text-sm font-bold font-sans"
       >
