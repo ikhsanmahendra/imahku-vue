@@ -1,26 +1,30 @@
 <template>
   <div
-    class="w-full px-4 md:px-20 lg:px-32 py-4 flex justify-between items-center"
+    class="w-full px-4 md:px-20 lg:px-32 py-4 flex justify-between items-center border border-gray-100"
   >
     <h1
       class="text-xl md:text-2xl lg:text-3xl font-extrabold font-sans text-black"
     >
-      <router-link to="/"> Imahku </router-link>
+      <router-link to="/"> ImahKu </router-link>
     </h1>
 
     <!-- Menu for larger screens -->
     <div class="hidden md:flex justify-between space-x-8 items-center">
       <router-link
         to="/"
-        :class="{ 'underline underline-offset-4 text-black': isActive('/') }"
+        :class="{
+          'underline underline-offset-8 decoration-2  text-black':
+            isActive('/'),
+        }"
         class="text-sm md:text-base lg:text-lg font-bold font-sans"
       >
         Home
       </router-link>
       <router-link
-        to="/list"
+        to="/property-list"
         :class="{
-          'underline underline-offset-4 text-black': isActive('/list'),
+          'underline underline-offset-8 decoration-2 text-black':
+            isActive('/property-list'),
         }"
         class="text-sm md:text-base lg:text-lg font-bold font-sans"
       >
@@ -29,16 +33,18 @@
       <router-link
         to="/about"
         :class="{
-          'underline underline-offset-4 text-black': isActive('/about'),
+          'underline underline-offset-8 decoration-2 text-black':
+            isActive('/about'),
         }"
         class="text-sm md:text-base lg:text-lg font-bold font-sans"
       >
         About Us
       </router-link>
       <router-link
-        to="/contact"
+        to="/get-in-touch"
         :class="{
-          'underline underline-offset-4 text-black': isActive('/contact'),
+          'underline underline-offset-8 decoration-2 text-black':
+            isActive('/get-in-touch'),
         }"
         class="text-sm md:text-base lg:text-lg font-bold font-sans"
       >
@@ -74,15 +80,18 @@
     >
       <router-link
         to="/"
-        :class="{ 'underline underline-offset-4 text-black': isActive('/') }"
+        :class="{
+          'underline underline-offset-8 decoration-2 text-black': isActive('/'),
+        }"
         class="block py-2 px-4 text-sm font-bold font-sans border-b"
       >
         Home
       </router-link>
       <router-link
-        to="/list"
+        to="/property-list"
         :class="{
-          'underline underline-offset-4 text-black': isActive('/list'),
+          'underline underline-offset-8 decoration-2 text-black':
+            isActive('/property-list'),
         }"
         class="block py-2 px-4 text-sm font-bold font-sans border-b"
       >
@@ -91,16 +100,18 @@
       <router-link
         to="/about"
         :class="{
-          'underline underline-offset-4 text-black': isActive('/about'),
+          'underline underline-offset-8 decoration-2 text-black':
+            isActive('/about'),
         }"
         class="block py-2 px-4 text-sm font-bold font-sans border-b"
       >
         About Us
       </router-link>
       <router-link
-        to="/contact"
+        to="/get-in-touch"
         :class="{
-          'underline underline-offset-4 text-black': isActive('/contact'),
+          'underline underline-offset-8 decoration-2 text-black':
+            isActive('/get-in-touch'),
         }"
         class="block py-2 px-4 text-sm font-bold font-sans"
       >

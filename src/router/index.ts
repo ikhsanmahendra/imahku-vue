@@ -19,12 +19,12 @@ const router = createRouter({
       component: AboutView,
     },
     {
-      path: "/contact",
+      path: "/get-in-touch",
       name: "Get In Touch",
       component: ContactView,
     },
     {
-      path: "/list",
+      path: "/property-list",
       children: [
         {
           path: "",

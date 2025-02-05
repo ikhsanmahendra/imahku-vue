@@ -18,7 +18,7 @@ import {
       <h1
         class="text-xl md:text-2xl lg:text-3xl font-extrabold font-sans text-black"
       >
-        Imahku
+        ImahKu
       </h1>
       <p class="text-gray-600 font-sans">
         We are passionate about helping our clients achieve their real estate
@@ -26,7 +26,7 @@ import {
         integrity, we provide exceptional service and expertise in every
         transaction.
       </p>
-      <div class="flex justify-start items-center space-x-12">
+      <div class="flex justify-start items-center space-x-4">
         <a href="">
           <IconFB />
         </a>
@@ -58,19 +58,19 @@ import {
       >
         Contact
       </h1>
-      <div class="flex space-x-8 justify-start items-start">
+      <div class="flex space-x-4 justify-start items-start">
         <div>
           <IconPhone />
         </div>
         <p class="text-gray-600 font-sans">+6282929292930</p>
       </div>
-      <div class="flex space-x-8 justify-start items-start">
+      <div class="flex space-x-4 justify-start items-start">
         <div>
           <IconMail />
         </div>
         <p class="text-gray-600 font-sans">support@imahku.com</p>
       </div>
-      <div class="flex space-x-8 justify-start items-start">
+      <div class="flex space-x-4 justify-start items-start">
         <div>
           <IconMaps />
         </div>

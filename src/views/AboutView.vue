@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex-none pb-10 space-x-0 md:space-x-10 lg:space-x-20 bg-white py-4 px-4 md:px-20 lg:px-32"
+    class="flex-none pb-10 space-x-0 md:space-x-10 lg:space-x-20 bg-white py-10 px-4 md:px-20 lg:px-32"
   >
     <div class="flex-none md:grid md:grid-cols-2 space-y-4 md:space-y-0">
       <h1
@@ -30,7 +30,7 @@
       <h1
         class="text-black text-2xl md:text-3xl lg:text-4xl text-start font-sans font-bold"
       >
-        Imahku
+        ImahKu
       </h1>
       <h1 class="text-gray-600 font-sans text-sm md:text-base lg:text-lg">
         We are passionate about helping our clients achieve their real estate
@@ -176,7 +176,7 @@
         ImahKu will give you help hand with search for a new living
       </h2>
       <div class="flex justify-center items-center">
-        <RouterLink to="/list">
+        <RouterLink to="/property-list">
           <ButtonComponent>Get a New Comfortable Home</ButtonComponent>
         </RouterLink>
       </div>
